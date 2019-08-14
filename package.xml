@@ -1,22 +1,22 @@
 <?xml version="1.0"?>
 <package>
     <name>xonu_FGP</name>
-    <version>1.0.0</version>
+    <version>2.0.0</version>
     <stability>stable</stability>
     <license uri="http://xonu.de/license/">EULA</license>
     <channel>community</channel>
     <extends/>
     <summary>Fixes the gross price instead of the net price.</summary>
-    <description>By default Magento works with fixed net prices. Tax rate included in the gross price you specify in backend depends on the origin country setting.&#xD;
+    <description>By default Magento works with fixed net prices. Tax rate included in the gross price you set in the backend depends on the origin country setting.&#xD;
 &#xD;
-If your customer's destination country has a higher tax rate a new higher subtotal gross price is calculated for the customer.&#xD;
+If your customer's destination country has a higher tax rate, a new higher subtotal gross price is calculated for the customer.&#xD;
 &#xD;
 This extension makes Magento work with fixed gross prices. All customers pay the same subtotal gross price, but get a different tax value shown according to the destination tax rate.</description>
-    <notes>First release.</notes>
+    <notes>Made compatible with Magento versions older than 1.6. Applies to orders created in the backend too. Made compatible with a specific Magento configuration.</notes>
     <authors><author><name>Pawel Kazakow</name><user>xonu</user><email>support@xonu.de</email></author></authors>
-    <date>2012-12-03</date>
-    <time>15:53:51</time>
-    <contents><target name="magecommunity"><dir name="Xonu"><dir name="FGP"><dir name="Model"><file name="Calculation.php" hash="d2ab415bf41d2ef8e75aa8cb8a33d5f2"/></dir><dir name="etc"><file name="config.xml" hash="8d43adda7291a6894b85b44e7bb13db1"/></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="xonu_FGP.xml" hash="684fc8affc328c500bca7232b78636b8"/></dir></target></contents>
+    <date>2013-06-26</date>
+    <time>09:54:11</time>
+    <contents><target name="magecommunity"><dir name="Xonu"><dir name="FGP"><dir name="Model"><file name="Calculation.php" hash="53ee9caa49c7875d0f03a6516da4ce9c"/><file name="Session.php" hash="dbb6f4d86ff04fd7f2f50f650853b509"/></dir><dir name="etc"><file name="config.xml" hash="d0e42448ceb3e7528387000478244c0c"/></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Xonu_FGP.xml" hash="6cd1d4bb483492bbae772413b16a16f0"/></dir></target></contents>
     <compatible/>
-    <dependencies><required><php><min>5.0.0</min><max>6.0.0</max></php></required></dependencies>
+    <dependencies><required><php><min>5.2.0</min><max>6.0.0</max></php></required></dependencies>
 </package>
