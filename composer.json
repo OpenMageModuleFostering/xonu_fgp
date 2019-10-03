@@ -1,16 +1,19 @@
 {
-    "name": "OpenMageModuleFostering/xonu_FGP",
+    "name": "OpenMageModuleFostering\/xonu_FGP",
     "type": "magento-module",
     "license": "EULA",
     "homepage": "",
     "description": "Fixes the gross price instead of the net price.",
     "authors": [
-    {
-        "name": "Pawel Kazakow",
-        "email": "support@xonu.de"
-    }
-],
+        {
+            "name": "Pawel Kazakow",
+            "email": "support@xonu.de"
+        }
+    ],
     "suggest": {
-        "magento-hackathon/magento-composer-installer": "*"
-    }
+        "magento-hackathon\/magento-composer-installer": "*"
+    },
+    "keywords": [
+        "openmage-module"
+    ]
 }
